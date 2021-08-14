@@ -1,0 +1,171 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: #eee;
+  /* 设置body的背景颜色，网页会自适应，所以整个页面背景颜色都会改变 */
+}
+.globalHeader {
+  margin: 20px;
+  /* 设置margin让header居中 */
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchForm {
+  margin: 20px;
+  /* 设置margin让header居中 */
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 0 100px;
+    /* 设置margin让header居中 */
+  }
+  .searchForm {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 如果一个元素最大宽度是固定的，就可以使用margin：0 auto  让元素居中 */
+  }
+}
+.searchForm > input {
+  width: 100%;
+  margin-right: 20px;
+  height: 40px;
+  padding: 0 10px;
+  /* padding让输入文字与边框有间隙 */
+  border: none;
+  border-radius: 6px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  border: none;
+  border-radius: 4px;
+  background: rgba(4, 69, 130, 0.85);
+  color: white;
+  padding: 0 28px;
+  font-size: 16px;
+}
+
+.siteList {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: start;
+  }
+  .siteList > li {
+    margin-right: 25px;
+  }
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+.siteList .site > .logo {
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-transform: uppercase; */
+  /* css中将logo变为大写的方法 */
+}
+.siteList .site > .link {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.siteList .site > .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+@media (min-width: 500px) {
+  .siteList .site > .close {
+    display: none;
+  }
+  .siteList .site:hover > .close {
+    display: block;
+  }
+}
+.siteList .addButton {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.siteList .addButton .icon-Wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteList .addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+
+.siteList .addButton .text {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+
+/*# sourceMappingURL=style.e308ff8e.css.map */
